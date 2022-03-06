@@ -1,0 +1,77 @@
+.header{
+    &__top{
+        padding: 14px 129px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__tabs{
+        padding: 10px 0;
+        background: linear-gradient(0deg, #333333, #333333), linear-gradient(0deg, #333333, #333333), #735FF2;
+        display: flex;
+        justify-content: center;
+        a{
+            color: $colorWhite;
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            &:not(:last-child){
+                margin-right: 56px;
+            }
+            @include default-link;
+        }
+    }
+}
+.logo{
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    svg{
+        margin-right: 10px;
+    }
+    &__text{
+        color: $mainBlack;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 10px;
+    }
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    color: $mainBlack;
+    &__divider{
+        height: 17px;
+        width: 2px;
+        background-color: $mainBlack;
+        transform: rotateZ(20deg);
+        opacity: 0.65;
+    }
+    a{
+        text-decoration: none;
+        color: $mainBlack;
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        &:not(:last-child){
+            margin-right: 25px;
+        }
+        @include default-link;
+    }
+    div{
+        margin-right: 25px;
+    }
+}
+.phone-block{
+    display: flex;
+    align-items: flex-end;
+    &__phone{
+        display: block;
+        color: $mainBlack;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    a:not(:last-child){
+        margin-right: 6px;
+    }
+}
