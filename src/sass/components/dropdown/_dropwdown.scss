@@ -25,6 +25,7 @@
   opacity: 0;
   visibility: hidden;
   position: absolute;
+  z-index: 9999;
   padding: 8px 16px;
   background-color: $mainGray;
   border-radius: 5px;
