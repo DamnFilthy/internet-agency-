@@ -1,0 +1,48 @@
+.burger{
+  z-index: 9999999;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  div{
+    cursor: pointer;
+    position: relative;
+    height: 2px;
+    width: 30px;
+    background-color: $mainBlack;
+    &::after{
+      transition: .3s ease-in-out;
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: 7.5px;
+      height: 2px;
+      width: 15px;
+      background-color: $mainBlack;
+    }
+  }
+}
+.burger-on{
+  div{
+    background-color: $mainWhite;
+    transform: rotateZ(45deg);
+    &::after{
+      background-color: $mainWhite;
+      top: 0;
+      left: -0.5px;
+      width: 30px;
+      transform: rotateZ(90deg);
+    }
+  }
+}
+.overflow{
+  overflow: hidden;
+}
+@media (min-width: 985px){
+  .burger{
+    display: none;
+  }
+}

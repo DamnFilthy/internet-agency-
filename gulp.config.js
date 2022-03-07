@@ -13,6 +13,7 @@ module.exports = {
         "node_modules/jquery/dist/jquery.min.js",
         "node_modules/swiper/swiper-bundle.js",
         "node_modules/slick-slider/slick/slick.js",
-        "node_modules/jquery-ui-slider/jquery-ui.min.js"
+        "node_modules/jquery-ui-slider/jquery-ui.min.js",
+        "node_modules/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"
     ]
 }
