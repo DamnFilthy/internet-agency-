@@ -2,6 +2,15 @@
   .nav-links, .phone-block, .header__tabs {
     display: none;
   }
+  .header__top{
+    position: fixed;
+    background-color: $mainWhite;
+    width: 100%;
+    z-index: 999;
+  }
+  .promotion {
+    padding-top: 58px;
+  }
 }
 @media (max-width: 600px){
   .header__top {

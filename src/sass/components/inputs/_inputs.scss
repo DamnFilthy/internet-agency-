@@ -12,6 +12,14 @@
   display: inline-block;
   position: relative;
   padding-left: 20px;
+  &_small{
+    line-height: 17px;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  &_white{
+    color: $colorWhite;
+  }
 }
 .text::before{
   content: "";
@@ -40,7 +48,25 @@
   border-bottom: 3px solid $checkGray;
   transform: rotate(-45deg);
 }
-
+.text_red::after{
+    border-left: 3px solid $colorRed;
+    border-bottom: 3px solid $colorRed;
+}
 .checkbox:checked + .text::after{
   opacity: 1;
+}
+
+
+.default-input{
+  color: $mainWhite;
+  padding: 15px 18px;
+  background-color: $mainBlack;
+  border: 1px solid $colorWhite;
+  border-radius: 5px;
+  max-height: 40px;
+}
+.default-input::placeholder{
+  padding: 15px 18px;
+  font-weight: 300;
+  font-size: 16px;
 }

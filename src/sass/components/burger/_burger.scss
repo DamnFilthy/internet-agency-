@@ -1,5 +1,5 @@
 .burger{
-  z-index: 9999999;
+  z-index: 999;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -37,6 +37,9 @@
       transform: rotateZ(90deg);
     }
   }
+}
+.header-on{
+  background-color: $mainBlack !important;
 }
 .overflow{
   overflow: hidden;
